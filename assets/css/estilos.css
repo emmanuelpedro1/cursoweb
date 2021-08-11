@@ -1,6 +1,13 @@
+/* banner final*/
+.final {
+  background-color: #3f3f3f;
+  color: white; }
+
+.position-sticky {
+  padding-top: 10% !important; }
+
 /*whatsapp inicio*/
 .w-flotante {
-  background-color: green;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -19,13 +26,17 @@
   width: 40px; }
 
 /*whatsapp fin*/
+body {
+  background-image: url("../../img/1350.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0 !important;
+  padding: 0 !important; }
+
 .no-gutters {
   padding-left: 0	!important;
-  padding-right: 0 !important; }
-
-body {
-  padding: 0 	!important;
-  margin: 0 !important; }
+  padding-right: 0 !important;
+  font-family: 'Fira Sans', sans-serif; }
 
 /*Carrusel*/
 .carrucel1 {
@@ -60,14 +71,11 @@ body {
   border-right: solid 18px #3f3f3f;
   border-bottom: solid 18px #D9D9D9; }
 
-.comunicado {
-  background-color: #94a9a4; }
-  .comunicado .comunicado__index1 {
-    background-color: #8C8C8C; }
-  .comunicado .comunicado__index2 {
-    color: black; }
-  .comunicado .comunicado__index3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+.indexstaff {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 20px; }
 
 /*estilos para la pagina*/
 .separacion {
@@ -75,18 +83,27 @@ body {
   height: 20px;
   background-image: linear-gradient(to left, #D9D9D9, #94a9a4, #593E3E); }
 
-#staff3 {
-  font-size: 20px;
-  text-align: center; }
-
 a:link {
   color: #8C8C8C; }
 
 a:visited {
   color: #8C8C8C; }
 
-a:hover {
-  font-size: 150%; }
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none; }
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s; }
+
+.cool-link:hover::after {
+  width: 100%; }
 
 #iconos1 {
   background-color: #D9D9D9;
@@ -95,9 +112,16 @@ a:hover {
 /*Imagen del logo (en general)*/
 #img1 {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 400px;
+  height: 300px; }
 
 /*Staff inicio*/
+.tablastaff {
+  display: block;
+  width: 200px;
+  height: 200px; }
+
 figure.staffpro {
   padding: 10px;
   margin-bottom: 50px;
@@ -124,4 +148,4 @@ figure.staffpro {
 .formulario {
   background-color: #D9D9D9; }
 
-/*Staff fin*/
+/*contacto fin*/
